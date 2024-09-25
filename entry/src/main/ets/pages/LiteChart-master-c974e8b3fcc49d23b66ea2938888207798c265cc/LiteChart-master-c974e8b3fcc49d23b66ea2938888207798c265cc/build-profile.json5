@@ -1,0 +1,50 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "material": {
+          "certpath": "C:\\Users\\Air14-2020\\.ohos\\config\\openharmony\\auto_ohos_default_LiteChart_com.anran0.myapplication.cer",
+          "storePassword": "0000001B153F7932DA17A0466A0D800DB4835186C64153BAE26AEC19B7C11122518B15DE339BEB47B3C8DF",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001BDFBEEC1A62AE8B2BF561A9B7C079F52AC0EFBA8AACDC5AEFE6AE23B757B31252DA4FE77A54097E",
+          "profile": "C:\\Users\\Air14-2020\\.ohos\\config\\openharmony\\auto_ohos_default_LiteChart_com.anran0.myapplication.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\Air14-2020\\.ohos\\config\\openharmony\\auto_ohos_default_LiteChart_com.anran0.myapplication.p12"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compileSdkVersion": 10,
+        //指定OpenHarmony应用/服务编译时的版本
+        "compatibleSdkVersion": 9,
+        //指定OpenHarmony应用/服务兼容的最低版本。
+//        "targetSdkVersion": 10,
+        //指定OpenHarmony应用/服务目标版本。若没有设置，默认为compatibleSdkVersion
+        "runtimeOS": "OpenHarmony",
+        //指定为OpenHarmony
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "lite_chart",
+      "srcPath": "./lite_chart"
+    }
+  ]
+}

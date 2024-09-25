@@ -1,0 +1,16 @@
+#IDEA 的牌子货
+/.idea/
+/.hvigor
+/oh_modules
+
+#构建的内容
+/lite_chart/.preview
+/lite_chart/build
+
+#构建的内容
+/entry/.preview
+/entry/build
+
+# 密匙
+/key.key
+/key.key.pub
